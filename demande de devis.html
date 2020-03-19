@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>demande de devis</title>
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic' rel='stylesheet'>
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+
+<title>demande de devis</title>
+
+
+<style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; } /* $linkColorOnBlack */
+  </style>
+</head>
+<body class="">
+<div id="result-iframe-wrap" role="main">
+<iframe id="result" srcdoc="
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+  <meta charset=&quot;UTF-8&quot;>
+  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;&quot; href=&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+<link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css&quot; integrity=&quot;sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh&quot; crossorigin=&quot;anonymous&quot;>
+
+
+  <title>demande de devis</title>
+  
+  
+  
+  <link rel='stylesheet' href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;amp;display=swap'>
+
+
+
+
+  <style>
+    dd-slected{
+      color:black;
+    }
+
+  </style>
+<style>
+
+  .partie_un{
+  color:white;
+  padding-top:150px;
+  padding-left:150px;
+  padding-right:150px;
+  margin-bottom: 100px	!important;
+  height: 300px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(120deg, #744A7D 0%, #C5373F 100%);
+  }
+  
+
+body, html {
+  background-color: #EBECF0;
+}
+
+body, p, input, select, textarea, button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div, p {
+  color: #BABECC;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: left;
+  margin-left=20px;
+  text-align:center;
+}
+
+#prestitle{
+    padding: 0px 0;
+    text-align: left;
+    
+  
+   
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+button {
+  color: #61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+button:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 100px;
+  height: 90px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px ;
+  font-size: 19.2px;
+}
+
+img{
+  border-radius: 8px;
+  line-height: 0;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:-10px 
+  font-size: 19.2px;
+}
+
+button.unit .icon {
+  margin-right: 0;
+}
+button.red {
+  display: block;
+  width: 100%;
+  color: #AE1100;
+}
+
+
+    .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
+
+  #msg {
+    margin-top: 5px;
+    margin-bottom: 50px	!important;  
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    width: 670px;
+    height: 200px;
+    outline: none;
+    }
+    
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+  <h1>navbar</h1>
+
+</div>
+  <div class=&quot;partie_un&quot; > 
+      <h2>Demande de devis</h2>
+  </div>
+
+</head>
+
+<body translate=&quot;no&quot; >
+
+ 
+  <form method=&quot;POST&quot;   action=&quot;./cible.php&quot;>
+
+   
+    
+  
+  <div class=&quot;segment&quot;>
+    <h1>demande de devis</h1>
+  </div>
+ 
+                                         <!--inputs--> 
+     <label>
+    <input type=&quot;text&quot; placeholder=&quot;Nom&quot;/>
+    <input type=&quot;text&quot; placeholder=&quot;Prénom&quot;/>
+    <input type=&quot;text&quot; placeholder=&quot;E-mail&quot;/>
+    <input type=&quot;text&quot; placeholder=&quot;Téléphone&quot;/>
+    <input type=&quot;text&quot; placeholder=&quot;Nom de votre entreprise&quot;/>
+    <input type=&quot;text&quot; placeholder=&quot;Addresse&quot;/>
+    </label>
+
+  
+  
+  <!--prestations--> 
+
+  <div id=&quot;prestitle&quot;>
+    <h4>choisissez votre prestation desirée</h4>
+  </div>
+
+  <div class=&quot;segment&quot;>
+    
+    <button class=&quot;unit&quot; type=&quot;button&quot;><img src=&quot;designn.png&quot;></button>
+    <button class=&quot;unit&quot; type=&quot;button&quot;><img src=&quot;dev.png&quot;></button>
+    <button class=&quot;unit&quot; type=&quot;button&quot;><img src=&quot;vg.png&quot;></button>
+    <button class=&quot;unit&quot; type=&quot;button&quot;><img src=&quot;videoo.png&quot;></button>
+
+</div>
+
+<div id=&quot;prestitle&quot;>
+    <h4>Donnez plus de details</h4>
+  </div>
+  <textarea id=&quot;msg&quot;></textarea>
+
+  
+<button class=&quot;red&quot; type=&quot;submit&quot;></i>Demander</button>
+
+
+
+
+
+  
+</form>
+  
+  
+  
+  
+  
+  
+
+</body>
+
+</html>
+ 
+" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
+</div>
+</body>
+</html>
